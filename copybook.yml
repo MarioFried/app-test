@@ -5,3 +5,7 @@
       copy:
         src: /home/ansible.jenkins/index.html
         dest: /usr/share/doc/HTML/
+        owner: root
+        group: root
+        mode: 0755
+      become: true  
