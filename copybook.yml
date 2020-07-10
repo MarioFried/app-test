@@ -1,0 +1,8 @@
+---
+- hosts: all 
+  become: true
+  tasks: 
+    - name: copy index.html onto NGINX servers
+        copy:
+          src: /home/ansible.jenkins/index.html
+          dest: /usr/share/doc/HTML/
