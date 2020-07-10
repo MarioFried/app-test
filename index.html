@@ -1,120 +1,156 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-                <title>Apache HTTP Server Test Page powered by CentOS</title>
-                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Welcome to CentOS</title>
+  <style rel="stylesheet" type="text/css">
 
-    <!-- Bootstrap -->
-    <link href="/noindex/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="noindex/css/open-sans.css" type="text/css" />
+        html {
+        background-image:url(img/html-background.png);
+        background-color: white;
+        font-family: "DejaVu Sans", "Liberation Sans", sans-serif;
+        font-size: 0.85em;
+        line-height: 1.25em;
+        margin: 0 4% 0 4%;
+        }
 
-<style type="text/css"><!--
+        body {
+        border: 10px solid #fff;
+        margin:0;
+        padding:0;
+        background: #fff;
+        }
 
-body {
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-weight: 100;
-  color: #ccc;
-  background: rgba(10, 24, 55, 1);
-  font-size: 16px;
-}
+        /* Links */
 
-h2, h3, h4 {
-  font-weight: 200;
-}
+        a:link { border-bottom: 1px dotted #ccc; text-decoration: none; color: #204d92; }
+        a:hover { border-bottom:1px dotted #ccc; text-decoration: underline; color: green; }
+        a:active {  border-bottom:1px dotted #ccc; text-decoration: underline; color: #204d92; }
+        a:visited { border-bottom:1px dotted #ccc; text-decoration: none; color: #204d92; }
+        a:visited:hover { border-bottom:1px dotted #ccc; text-decoration: underline; color: green; }
 
-h2 {
-  font-size: 28px;
-}
+        .logo a:link,
+        .logo a:hover,
+        .logo a:visited { border-bottom: none; }
 
-.jumbotron {
-  margin-bottom: 0;
-  color: #333;
-  background: rgb(212,212,221); /* Old browsers */
-  background: radial-gradient(ellipse at center top, rgba(255,255,255,1) 0%,rgba(174,174,183,1) 100%); /* W3C */
-}
+        .mainlinks a:link { border-bottom: 1px dotted #ddd; text-decoration: none; color: #eee; }
+        .mainlinks a:hover { border-bottom:1px dotted #ddd; text-decoration: underline; color: white; }
+        .mainlinks a:active { border-bottom:1px dotted #ddd; text-decoration: underline; color: white; }
+        .mainlinks a:visited { border-bottom:1px dotted #ddd; text-decoration: none; color: white; }
+        .mainlinks a:visited:hover { border-bottom:1px dotted #ddd; text-decoration: underline; color: white; }
 
-.jumbotron h1 {
-  font-size: 128px;
-  font-weight: 700;
-  color: white;
-  text-shadow: 0px 2px 0px #abc,
-               0px 4px 10px rgba(0,0,0,0.15),
-               0px 5px 2px rgba(0,0,0,0.1),
-               0px 6px 30px rgba(0,0,0,0.1);
-}
+        /* User interface styles */
 
-.jumbotron p {
-  font-size: 28px;
-  font-weight: 100;
-}
+        #header {
+        margin:0;
+        padding: 0.5em;
+        background: #204D8C url(img/header-background.png);
+        text-align: left;
+        }
 
-.main {
-   background: white;
-   color: #234;
-   border-top: 1px solid rgba(0,0,0,0.12);
-   padding-top: 30px;
-   padding-bottom: 40px;
-}
+        .logo {
+        padding: 0;
+        /* For text only logo */
+        font-size: 1.4em;
+        line-height: 1em;
+        font-weight: bold;
+        }
 
-.footer {
-   border-top: 1px solid rgba(255,255,255,0.2);
-   padding-top: 30px;
-}
+        .logo img {
+        vertical-align: middle;
+        padding-right: 1em;
+        }
 
-    --></style>
+        .logo a {
+        color: #fff;
+        text-decoration: none;
+        }
+
+        p {
+        line-height:1.5em;
+        }
+
+        h1 {
+                margin-bottom: 0;
+                line-height: 1.9em; }
+        h2 {
+                margin-top: 0;
+                line-height: 1.7em; }
+
+        #content {
+        clear:both;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        border-bottom: 5px solid #eee;
+        }
+
+    .mainlinks {
+        float: right;
+        margin-top: 0.5em;
+        text-align: right;
+    }
+
+    ul.mainlinks > li {
+    border-right: 1px dotted #ddd;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline;
+    list-style: none;
+    }
+
+    ul.mainlinks > li.last,
+    ul.mainlinks > li.first {
+    border-right: none;
+    }
+
+  </style>
+
 </head>
+
 <body>
-  <div class="jumbotron text-center">
-    <div class="container">
-          <h1>Welcome MARIO!!!</h1>
-                <p class="lead">This page is used to test the proper operation of the <a href="http://apache.org">Apache HTTP server</a> after it has been installed. If you can read this page it means that this site is working properly. This server is powered by <a href="http://centos.org">CentOS</a>.</p>
-                </div>
-  </div>
-  <div class="main">
-    <div class="container">
-       <div class="row">
-                        <div class="col-sm-6">
-                        <h2>Just visiting?</h2>
-                                        <p class="lead">The website you just visited is either experiencing problems or is undergoing routine maintenance.</p>
-                                        <p>If you would like to let the administrators of this website know that you've seen this page instead of the page you expected, you should send them e-mail. In general, mail sent to the name "webmaster" and directed to the website's domain should reach the appropriate person.</p>
-                                        <p>For example, if you experienced problems while visiting www.example.com, you should send e-mail to "webmaster@example.com".</p>
-                                </div>
-                                <div class="col-sm-6">
-                                        <h2>Are you the Administrator?</h2>
-                                        <p>You should add your website content to the directory <tt>/var/www/html/</tt>.</p>
-                                        <p>To prevent this page from ever being used, follow the instructions in the file <tt>/etc/httpd/conf.d/welcome.conf</tt>.</p>
 
-                                        <h2>Promoting Apache and CentOS</h2>
-                                        <p>You are free to use the images below on Apache and CentOS Linux powered HTTP servers.  Thanks for using Apache and CentOS!</p>
-                                        <p><a href="http://httpd.apache.org/"><img src="images/apache_pb.gif" alt="[ Powered by Apache ]"></a> <a href="http://www.centos.org/"><img src="images/poweredby.png" alt="[ Powered by CentOS Linux ]" height="31" width="88"></a></p>
-                                </div>
-                        </div>
-            </div>
-                </div>
+<div id="header">
+
+    <ul class="mainlinks">
+        <li> <a href="http://www.centos.org/">Home</a> </li>
+        <li> <a href="http://wiki.centos.org/">Wiki</a> </li>
+        <li> <a href="http://wiki.centos.org/GettingHelp/ListInfo">Mailing Lists</a></li>
+        <li> <a href="http://www.centos.org/download/mirrors/">Mirror List</a></li>
+        <li> <a href="http://wiki.centos.org/irc">IRC</a></li>
+        <li> <a href="https://www.centos.org/forums/">Forums</a></li>
+        <li> <a href="http://bugs.centos.org/">Bugs</a> </li>
+        <li class="last"> <a href="http://wiki.centos.org/Donate">Donate</a></li>
+    </ul>
+
+        <div class="logo">
+                <a href="http://www.centos.org/"><img src="img/centos-logo.png" border="0"></a>
         </div>
-          <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2>Important note:</h2>
-            <p class="lead">The CentOS Project has nothing to do with this website or its content,
-            it just provides the software that makes the website run.</p>
 
-            <p>If you have issues with the content of this site, contact the owner of the domain, not the CentOS project.
-            Unless you intended to visit CentOS.org, the CentOS Project does not have anything to do with this website,
-            the content or the lack of it.</p>
-            <p>For example, if this website is www.example.com, you would find the owner of the example.com domain at the following WHOIS server:</p>
-            <p><a href="http://www.internic.net/whois.html">http://www.internic.net/whois.html</a></p>
-          </div>
-          <div class="col-sm-6">
-            <h2>The CentOS Project</h2>
-            <p>The CentOS Linux distribution is a stable, predictable, manageable and reproduceable platform derived from
-               the sources of Red Hat Enterprise Linux (RHEL).<p>
+</div>
 
-            <p>Additionally to being a popular choice for web hosting, CentOS also provides a rich platform for open source communities to build upon. For more information
-               please visit the <a href="http://www.centos.org/">CentOS website</a>.</p>
-          </div>
+<div id="content">
+
+        <h1>Welcome to CentOS</h1>
+
+        <h2>The Community ENTerprise Operating System</h2>
+
+        <p><a href="http://www.centos.org/">CentOS</a> is an Enterprise-class Linux Distribution derived from sources freely provided
+to the public by Red Hat, Inc. for Red Hat Enterprise Linux.  CentOS conforms fully with the upstream vendors
+redistribution policy and aims to be functionally compatible. (CentOS mainly changes packages to remove upstream vendor
+branding and artwork.)</p>
+
+        <p>CentOS is developed by a small but growing team of core
+developers.&nbsp; In turn the core developers are supported by an active user community
+including system administrators, network administrators, enterprise users, managers, core Linux contributors and Linux enthusiasts from around the world.</p>
+
+        <p>CentOS has numerous advantages including: an active and growing user community, quickly rebuilt, tested, and QA'ed errata packages, an extensive <a href="http://www.centos.org/download/mirrors/">mirror network</a>, developers who are contactable and responsive, Special Interest Groups (<a href="http://wiki.centos.org/SpecialInterestGroup/">SIGs</a>) to add functionality to the core CentOS distribution, and multiple community support avenues including a <a href="http://wiki.centos.org/">wiki</a>, <a
+href="http://wiki.centos.org/irc">IRC Chat</a>, <a href="http://wiki.centos.org/GettingHelp/ListInfo">Email Lists</a>, <a href="https://www.centos.org/forums/">Forums</a>, <a href="http://bugs.centos.org/">Bugs Database</a>, and an <a
+href="http://wiki.centos.org/FAQ/">FAQ</a>.</p>
+
         </div>
-                  </div>
-    </div>
-  </div>
-</body></html>
+
+</div>
+
+
+</body>
+</html>
